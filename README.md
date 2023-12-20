@@ -1,6 +1,6 @@
 <table>
   <tr>
-    <td><img src="https://github.com/tu-usuario/tu-repositorio/blob/main/images/logo.png" width="100" height="auto"></td>
+    <td><img src="https://github.com/InformaticaClinica/OntoBridge/blob/main/project_images/Ontobridge_logo.png" width="100" height="auto"></td>
     <td><h1>Ontobridge: A Tool for Normalizing Medical Data Based on Ontologies</h1></td>
   </tr>
 </table>
