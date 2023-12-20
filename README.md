@@ -1,4 +1,4 @@
-# Ontobridge: A Tool for Normalizing Medical Data Based on Ontologies
+![Logo de Ontobridge](https://github.com/InformaticaClinica/OntoBridge/blob/main/project_images/Ontobridge_logo.png) # Ontobridge: A Tool for Normalizing Medical Data Based on Ontologies
 ## Introduction
 
 Ontobridge is a groundbreaking tool developed with a commitment to open science, utilizing freely accessible software. This tool is built upon the foundation of ontologies, which brings several advantages. The use of ontologies allows for a more structured and semantic approach to data handling, enhancing data interoperability and consistency. This approach also aids in the efficient integration of diverse data sources, making it easier to analyze and derive insights from complex medical data.
