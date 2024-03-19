@@ -1,0 +1,9 @@
+data/
+output/
+
+*.DS_Store*
+*pycache*
+*.properties
+*.csv
+*.ttl
+*.rdf
