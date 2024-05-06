@@ -1,0 +1,75 @@
+version: '3'
+
+services:
+  orchestrator:
+    build: 
+      context: services/orchestrator/
+      dockerfile: Dockerfile
+    container_name: orchestrator
+    ports:
+      - "5001:5000"
+    networks:
+      red_privada:
+        ipv4_address: 10.0.0.2
+
+  ontop:
+    build: 
+      context: services/docker1/
+      dockerfile: Dockerfile
+    container_name: ontop 
+    ports:
+      - "5002:5000"
+    volumes:
+      - ./data:/app/data
+    networks:
+      red_privada:
+        ipv4_address: 10.0.0.3
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/ontop-cli-5.0.2/
+      - ONTOP_CLI_DIR=/app/ontop-cli-5.0.2
+
+  owl:
+    build: 
+      context: services/docker2/
+      dockerfile: Dockerfile
+    container_name: owl 
+    ports:
+      - "5003:5000"
+    volumes:
+      - ./data:/app/data
+    networks:
+      red_privada:
+        ipv4_address: 10.0.0.4
+
+  processing:
+    build:
+      context: services/docker3/
+      dockerfile: Dockerfile
+    container_name: processing
+    networks:
+      red_privada:
+        ipv4_address: 10.0.0.5
+    ports:
+      - "5004:5000"
+    volumes:
+      - ./data:/app/data
+
+  fuseki:
+    image: "stain/jena-fuseki"
+    environment:
+      - FUSEKI_DATASET_1=name1
+      - ADMIN_PASSWORD=pw123
+    ports: 
+      - "5005:3030"
+    networks:
+      red_privada:
+        ipv4_address: 10.0.0.6
+
+networks:
+  red_privada:
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24
+
+volumes:
+  data:

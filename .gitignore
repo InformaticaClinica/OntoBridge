@@ -1,9 +1,8 @@
-data/
-output/
-
+*.csv
+*.properties
 *.DS_Store*
 *pycache*
-*.properties
-*.csv
-*.ttl
-*.rdf
+services/mysql-covid/data/
+rdf_output.ttl
+reg_datanex_test.owl
+reg_datanex_test.ttl
