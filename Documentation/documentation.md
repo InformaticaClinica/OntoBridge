@@ -229,13 +229,40 @@ def add_rdf_to_owl(chosen_model):
         format= ONTOLOGY_FORMAT)
 ```
 ## Extraction of the standard data tables
-To extract the standard data, the following steps must be followed:
+The data extraction process in OntoBridge follows a structured pipeline that ensures data is transformed and mapped correctly to the desired Common Data Model (CDM). The pipeline operates across multiple CDM structures, including OMOP (versions 5.3, 5.4, and 6.0), i2b2, and ISO13606. Each step involves SPARQL queries and Python post-processing to align the ontological data with the target CDM.
 
-1. Uploading the Set of Ontologies to Jena Fuseki: The first step involves uploading a set of ontologies into Jena Fuseki (a popular open-source SPARQL server). 
+1. Uploading the Ontologies to Jena Fuseki
+The initial step is to upload the required ontologies into Jena Fuseki, an open-source SPARQL server. This allows querying the ontologies using SPARQL, the RDF query language. Jena Fuseki hosts the ontologies and makes them accessible for querying in the following stages.
 
-2. Executing SPARQL Queries Using the SPARQLWrapper Python Library: Once the ontologies are uploaded, query this data to extract the CDM tables using SPARQL. The code to perform these queries using python is located in the "Table_creation" folder
+2. SPARQL Queries and Data Extraction
+Once the ontologies are uploaded, the extraction of the CDM tables begins. This is done using SPARQL queries, executed through the Python library SPARQLWrapper. The queries are organized into a pre-processing phase, which extracts the necessary data from the ontologies and maps it into the required structure of the target CDM.
 
-3. Post-Processing in Python to Adjust Tables to the specific CDM (for example, OMOP) and extract data as CSV: After retrieving the necessary information from the ontologies, the post-processing is performed. This involves transforming the query results into a format that aligns with that of the CDM. Finally, CDM data tables are extracted in CSV format and ready to be loaded into a DBMS or directly used for analysis.
+Pre-Processing Structure:
+Each CDM (OMOP 5.3, 5.4, 6.0, i2b2, and ISO13606) has a dedicated directory within the src directory. Inside each directory, the pre-processing phase is broken down by CDM tables. For each table, there is a subdirectory containing the necessary SPARQL queries for extracting the data.
+For example, in the OMOP_6_0 folder, the following table directories exist:
+drug_exposure/
+measurement/
+observation/
+person/
+procedure_occurrence/
+visit_occurrence/
+visit_detail/
+
+3. Post-Processing for CDM Alignment
+After the data has been extracted via SPARQL, the next step is to post-process it to ensure it adheres to the format and constraints of the CDM.
+Post-Processing Structure:
+Similar to the pre-processing stage, the post-processing phase is organized by CDM and table. Each CDM directory has a corresponding postprocessing folder that contains Python scripts responsible for further refining the data.
+For instance, in the i2b2 CDM folder:
+postprocessing/concept_dimension/post_concept_dimension.py
+postprocessing/observation_fact/post_observation_fact.py
+postprocessing/patient_dimension/post_patient_dimension.py
+
+4. Shared Functions
+The pipeline includes a share directory within each post-processing folder. This directory contains reusable Python utilities (utils.py) that are leveraged by multiple post-processing scripts. These shared functions help standardize and streamline operations across different CDM tables, reducing code duplication and improving maintainability.
+
+5. Final Output
+Upon completing the post-processing phase, the extracted and processed data is output in CSV format. These CSV files represent the final, CDM-compliant tables that can be loaded into a database management system (DBMS) or used for downstream analysis and research.
+The entire pipeline is modular, allowing each CDM to be processed independently, with specific adaptations for its structure, while reusing common utilities and patterns where applicable.
 
 # Dockerization of OntoBridge
 To make it easier for any user who requires OntoBridge to use it, regardless of their previous knowledge of the more technical aspects of the tool and the operating system they use, we decided to dockerize the entire process to make it easier to use.
