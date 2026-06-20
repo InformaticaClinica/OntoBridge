@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DrugExposureId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DeviceExposureId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/PersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ProcedureSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitDetailConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DischargeToConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/MeasurementConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/Identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Node representing an identifier value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/UnitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/EthnicityConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/SourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Node representing a source concept identifier.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ValueAsConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/CauseSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/GenderSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DrugSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/Sig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/hasSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+    <rdfs:comment>Literal source value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/MeasurementSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/AdmittingSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DrugTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/PersonSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ValueAsString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/QualifierSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ProcedureSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/LocationId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitDetailSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DischargeToSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/StopReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/GenderConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/AdmittingSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/hasSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+    <rdfs:comment>Source concept identifier.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/UnitConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ObservationSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/RaceSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/EthnicitySourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DrugSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ProcedureConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/RaceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Node representing a standard concept identifier.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DrugConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/hasConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+    <rdfs:comment>Standard concept identifier.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/RouteConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/LotNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/UniqueDeviceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/MeasurementTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ObservationConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DeviceSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitDetailParentId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/SourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Node representing a source value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionStatusConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionStatusSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/MeasurementId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DeviceSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/PrecedingVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/CareSiteId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/OperatorConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/PrecedingVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ObservationId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/RouteSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ObservationSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ProcedureOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ModifierSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/hasId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/dictionary/Identifier"/>
+    <rdfs:comment>Literal identifier value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ProcedureTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/EthnicitySourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/CauseConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/MeasurementSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DoseUnitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ObservationTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ValueSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitDetailTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DeathTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/QualifierConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/GenderSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ModifierConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/CauseSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/VisitDetailSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/ConditionTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/RaceSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/SourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DeviceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/dictionary/DeviceTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/omop_5_3/dictionary/ConceptId"/>
+  </rdf:Description>
+</rdf:RDF>

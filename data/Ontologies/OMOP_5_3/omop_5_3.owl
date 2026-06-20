@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceModifierSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ModifierSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDaysSupply">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DeviceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceModifierConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ModifierConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceExposureStartDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathCauseConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/CauseConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonEthnicitySourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/EthnicitySourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementUnitConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/UnitConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceDischargeToSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DischargeToSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/MeasurementConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrencePersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementOperatorConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/OperatorConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ObservationSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitStartDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureRouteSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/RouteSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailPrecedingVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PrecedingVisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureUniqueDeviceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/UniqueDeviceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationValueAsNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailCareSiteId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/CareSiteId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonRaceSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/RaceSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureQuantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonBirthDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementRangeHigh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProcedureConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementUnitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/UnitSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailStartDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceDischargeToConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DischargeToConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonYearOfBirth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposurePersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureRefills">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailDischargeToConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DischargeToConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathCauseSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/CauseSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ObservationSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationQualifierSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/QualifierSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailAdmittingSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/AdmittingSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationUnitConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/UnitConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceAdmittingSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/AdmittingSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonEthnicityConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/EthnicityConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathPersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceExposureEndDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/Death">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ObservationId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/MeasurementSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailDischargeToSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DischargeToSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrencePersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugExposureStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureRouteConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/RouteConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonGenderSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/GenderSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathDeathDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceQuantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DrugTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitEndDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceExposureStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionStartDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionStatusSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionStatusSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonGenderSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/GenderSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureStopReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/StopReason"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonEthnicitySourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/EthnicitySourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProcedureTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DrugConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementValueAsConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ValueAsConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailEndDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DrugSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailPersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureQuantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceCareSiteId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/CareSiteId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugExposureEndDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceAdmittingSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/AdmittingSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonPersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DeviceSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationUnitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/UnitSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProcedureSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceStopReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/StopReason"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/MeasurementSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DeviceTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonRaceSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/RaceSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementValueAsNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DrugSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceExposureId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DeviceExposureId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceExposureEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugExposureEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureVerbatimEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathCauseSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/CauseSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugExposureId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DrugExposureId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailAdmittingSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/AdmittingSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDoseUnitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DoseUnitSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationValueAsString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ValueAsString"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationValueAsConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ValueAsConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProcedureOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureSig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/Sig"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathDeathDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementPersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonPersonSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionEndDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeathDeathTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Death"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DeathTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/VisitDetail">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonRaceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/RaceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationPersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/DeviceExposure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposurePersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrencePrecedingVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PrecedingVisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureLotNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/LotNumber"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonCareSiteId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/CareSiteId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrencePersonId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/PersonId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProcedureSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProcedureSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceVisitOccurrenceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitOccurrenceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureDeviceSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/DeviceSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/Observation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ObservationTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDeviceExposureVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DeviceExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonLocationId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/LocationId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementValueSourceValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ValueSourceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitOccurrenceVisitTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://example.org/omop_5_3/dictionary/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationQualifierConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/QualifierConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementTypeConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/MeasurementTypeConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/DrugExposure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationObservationConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ObservationConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionSourceConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionSourceConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/ProcedureOccurrence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementRangeLow">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/ConditionOccurrence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonMonthOfBirth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasConditionOccurrenceConditionStatusConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ConditionOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ConditionStatusConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonGenderConceptId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/GenderConceptId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonDayOfBirth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasDrugExposureDrugExposureStartDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/DrugExposure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasPersonProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Person"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasProcedureOccurrenceProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/ProcedureOccurrence"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/VisitOccurrence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailParentId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/VisitDetailParentId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementDatetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasObservationProviderId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Observation"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/ProviderId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasVisitDetailVisitDetailStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/VisitDetail"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/hasMeasurementMeasurementId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/omop_5_3/Measurement"/>
+    <rdfs:range rdf:resource="http://example.org/omop_5_3/dictionary/MeasurementId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/omop_5_3/Measurement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
