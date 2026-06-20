@@ -1,4 +1,4 @@
-from .config_utils import ONTOP_DIRECTORY, ONTOP_SH, ONTOBRIGE_PROPERTIES_SAVING, INDEX
+from .config_utils import ONTOP_DIRECTORY
 import logging
 import subprocess
 
@@ -10,24 +10,27 @@ jdbc.url={jdbc_url}
 jdbc.user={jdbc_user}
 jdbc.password={jdbc_password}
     """
-    with open(ONTOBRIGE_PROPERTIES_SAVING, 'w') as file:
+    with open('data/ontobridge.properties', 'w') as file:
         file.write(properties_content)
         
-def execute_ontop_materialize():
+def execute_ontop_materialize(ontop_sh_file):
+    logging.info('EXECUTING THE ONTOP MATERIALIZE COMMAND:')
     try:
-        logging.debug('Setting read/write permissions for the ONTOP directory.')
+        logging.info('Setting read/write permissions for the ONTOP directory.')
         subprocess.run(['chmod', '-R', '777', ONTOP_DIRECTORY], check=True)
-        logging.debug('Permissions set successfully.')
+        logging.info('Permissions set successfully.')
 
-        logging.debug('Listing the contents of the data/ directory.')
+        logging.info('List of the contents of the data/ directory:')
         subprocess.run(['ls', 'data/'], check=True)
-        logging.debug('Contents listed successfully.')
 
-        logging.debug(f'Executing ONTOP script: {ONTOP_SH}')
-        subprocess.run(['sh', ONTOP_DIRECTORY + ONTOP_SH], check=True)
-        logging.debug('Script executed successfully.')
+        logging.info(f'Executing ONTOP script: {ontop_sh_file}')
+        subprocess.run(['sh', ONTOP_DIRECTORY + ontop_sh_file], check=True)
 
     except subprocess.CalledProcessError as e:
-        logging.error(f'Error executing a command: {e}')
+        error_message = f'Error executing a command: {e.stderr or e}'
+        logging.error(error_message)
+        raise Exception(error_message) 
     except Exception as e:
-        logging.error(f'Unexpected error: {e}')
+        error_message = f'Unexpected error: {e}'
+        logging.error(error_message)
+        raise Exception(error_message) 
