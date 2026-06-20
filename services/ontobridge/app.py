@@ -1,38 +1,53 @@
-from utils.config_utils import LOGGING_CONFIG, FUSEKI_URL, ONTOLOGIES_PATH, FUSEKI_DB_NAME, PREPROCESSED_TABLES, POSTPROCESSED_TABLE
-from utils.Graph_utils import add_rdf_to_owl
-from utils.Fuseki_utils import load_owl_fuseki
+from utils.config_utils import ONTOP_SH_CLINICAL_DATA, ONTOP_SH_LOCAL_DIC, ONTOP_SH_MAPPINGS, ONTOP_SH_STANDARD_DIC
+from flask import Flask, render_template, request
+from flask_cors import CORS
+from utils.RDB2RDF_utils import execute_ontop_materialize, create_properties_file
+from utils.models import execute_chosen_model
 
-from src.OMOP_5_3.preprocessing.send_query import get_query_OMOP_5_3
-from src.OMOP_5_3.postprocessing.post_omop import post_OMOP_5_3
-from src.OMOP_5_4.preprocessing.send_query import get_query_OMOP_5_4
-from src.OMOP_5_4.postprocessing.post_omop import post_OMOP_5_4
-from src.OMOP_6_0.preprocessing.send_query import get_query_OMOP_6_0
-from src.OMOP_6_0.postprocessing.post_omop import post_OMOP_6_0
-from src.i2b2.preprocessing.send_query import get_query_i2b2
-from src.i2b2.postprocessing.post_i2b2 import post_i2b2_core
-from src.ISO13606.preprocessing.send_query import get_query_ISO13606
-from src.ISO13606.postprocessing.post_iso13606 import post_ISO13606
+# Initialize Flask app
+app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
-LOGGING_CONFIG
+@app.route('/', methods=['GET'])
+def root():
+    return render_template('index.html')
 
-def execute_chosen_model(chosen_model):
+@app.route('/home', methods=['GET',])
+def index():
+    return render_template('index.html')
 
-    get_query = None
-    post_processing = None
+# creating the properties file
+@app.route('/create_properties_file', methods=['POST'])
+def run_execute_ontop_materialize():
+        jdbc_name = request.form['jdbc_name']
+        jdbc_url = request.form['jdbc_url']
+        jdbc_user = request.form['jdbc_user']
+        jdbc_password = request.form['jdbc_password']
+        create_properties_file(jdbc_name, jdbc_url, jdbc_user, jdbc_password)           
+        return render_template('success_properties.html')  
 
-    model_to_functions = {
-        'OMOP_5_3': (get_query_OMOP_5_3, post_OMOP_5_3),
-        'OMOP_5_4': (get_query_OMOP_5_4, post_OMOP_5_4),
-        'OMOP_6_0': (get_query_OMOP_6_0, post_OMOP_6_0),
-        'i2b2': (get_query_i2b2, post_i2b2_core),
-        'ISO13606': (get_query_ISO13606, post_ISO13606)
+@app.route('/ontop/<connection_type>', methods = ['GET', 'POST'])
+
+def ontop_connection(connection_type):
+    ontop_files = {
+        "clinical": ONTOP_SH_CLINICAL_DATA,
+        "local_dic": ONTOP_SH_LOCAL_DIC, 
+        "standard_dic": ONTOP_SH_STANDARD_DIC,
+        "mappings": ONTOP_SH_MAPPINGS
     }
+    try:
+        execute_ontop_materialize(ontop_files[connection_type])
+        return render_template("transformation_success.html")
+    except Exception as e:
+        return render_template("error_ontop.html", error_message = f"An error occurred: {str(e)}")
 
-    get_query, post_processing = model_to_functions[chosen_model]
-    add_rdf_to_owl(chosen_model)  
-    load_owl_fuseki(FUSEKI_URL, ONTOLOGIES_PATH + chosen_model, FUSEKI_DB_NAME)
-    get_query(PREPROCESSED_TABLES+chosen_model+"/")
-    post_processing(PREPROCESSED_TABLES+chosen_model+"/", 
-                    POSTPROCESSED_TABLE+chosen_model+"/")
+@app.route('/execute_chosen_model', methods=['POST'])
+def create_final_tables():
+    chosen_model = request.form['chosen_model']
+    execute_chosen_model(chosen_model)
+    return render_template("transformation_success.html")
+
+
 
 
