@@ -1,33 +1,13 @@
 import logging
 
-# URL ROUTES
-HOME = '/home'
-ONTOP_MATERIALIZE = '/run_ontop'
-EXECUTE_CHOSEN_MODEL = '/execute_chosen_model'
-
-# HTMLs
-INDEX = 'index.html'
-TRANSFORMATION_SUCCES = "transformation_success.html"
-
 # FUSEKI PARAMETERS
 FUSEKI_URL = "http://10.0.0.6:3030/"
 FUSEKI_DB_NAME = 'name1'
 
 # DIRECOTIRES
-ONTOBRIGE_PROPERTIES_SAVING = 'data/ontobridge.properties'
 PREPROCESSED_TABLES = "data/output/Pre-processing/"
 POSTPROCESSED_TABLE = "data/output/Post-processing/"
-ONTOLOGIES_PATH = "./data/Ontologies/"
-REGISTER_ONTOLOGY = "reg_datanex.owl"
-ONTOLOGY_EXTENSION = ".owl"
-EMPTY_REG = "reg_datanex_vacia.owl"
-
 VOLUME_PATH = './data/'
-ONTOLOGY_FORMAT = 'xml'
-RDF_FORMAT = 'ttl'
-RDF_EXTENSION = '*.ttl'
-ONTOLOGY_EXTENSION = '*.owl'
-
 
 # LOGGING CONFIG
 LOGGING_CONFIG = logging.basicConfig(level=logging.INFO, 
@@ -36,4 +16,9 @@ LOGGING_CONFIG = logging.basicConfig(level=logging.INFO,
 
 # ONTOP
 ONTOP_DIRECTORY = "./ontop-cli-5.0.2"
-ONTOP_SH = "/ontop_materialize.sh"
+ONTOP_SH_CLINICAL_DATA = "/ontop_materialize_clinical_data.sh"
+ONTOP_SH_LOCAL_DIC = "/ontop_materialize_local_dic.sh"
+ONTOP_SH_MAPPINGS = "/ontop_materialize_mappings.sh"
+ONTOP_SH_STANDARD_DIC = "/ontop_materialize_standard_dic.sh"
+
+
